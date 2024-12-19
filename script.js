@@ -10,7 +10,7 @@ heading. textContent = "Verify Your Account";
 
 const subheading = document.createElement ("p") ;
 subheading.id = "verification_subtext";
-subheading. textContent = "We emailed you this six digit code to acciojob@email.com Enter";
+subheading. textContent = "We emailed you this six digit code to acciojob@email.com Enter the code below to confirm your email address.";
 
 const otp = document.createElement ("div");
 otp.id = "otp" ;
