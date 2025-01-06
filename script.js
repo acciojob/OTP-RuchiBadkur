@@ -21,6 +21,7 @@ for(let  i = 0; i <6; i++){
     input.type = "number";
     input.placeholder = "0";
     input.classList.add("code")
+	input.id = `code-${i+1}`
     otp.appendChild(input);
 }
 
