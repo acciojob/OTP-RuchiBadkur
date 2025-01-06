@@ -46,9 +46,13 @@ codes.forEach((input, index) => {
     input.addEventListener("input", (e) => {
         // Move to the next input when a number is entered
         const value = e.target.value;
-        if (value && index < codes.length - 1) {
-            codes[index + 1].focus();
-        }
+   //      if (value && index < codes.length - 1) {
+			// // codes[index+1].id = "focused";
+            // codes[index + 1].focus();
+   //      }
+		if (value && index < codes.length - 1) {
+		    setTimeout(() => codes[index + 1].focus(), 10); // Delay to ensure DOM updates
+		}
     });
 
     input.addEventListener("keydown", (e) => {
