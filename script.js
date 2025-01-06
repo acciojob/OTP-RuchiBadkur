@@ -2,17 +2,17 @@
 const body = document. getElementsByTagName("body")[0] ;
 
 const output = document.createElement("div");
-output. id = "output";
+output.id = "output";
 
 const heading = document.createElement("h1");
-heading. id = "verification_heading";
-heading. textContent = "Verify Your Account";
+heading.id = "verification_heading";
+heading.textContent = "Verify Your Account";
 
 const subheading = document.createElement ("p") ;
 subheading.id = "verification_subtext";
-subheading. textContent = "We emailed you this six digit code to acciojob@email.com Enter the code below to confirm your email address.";
+subheading.textContent = "We emailed you this six digit code to acciojob@email.com Enter the code below to confirm your email address.";
 
-const otp = document.createElement ("div");
+const otp = document.createElement("div");
 otp.id = "otp" ;
 otp.classList.add("code-container");
 
@@ -36,7 +36,7 @@ console.log(document.getElementsByTagName("input"));
 output.appendChild (heading);
 output.appendChild (subheading) ;
 output.appendChild(otp);
-body. appendChild (output) ;
+body.appendChild (output) ;
 
 
 const codes = document.querySelectorAll(".code");
